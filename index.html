@@ -512,7 +512,7 @@ d3.select("#desc_"+ voyageID)
 function transition(){
    voyageMarker.transition()
          .ease(d3.easeLinear)
-         .duration(15000)
+         .duration(30000)
          .attrTween("transform", createPathTween)
 
    paths.transition()
@@ -526,7 +526,7 @@ function transition(){
          })
         .transition()
         .ease(d3.easeLinear)
-        .duration(15000)
+        .duration(30000)
         .attr("stroke-dashoffset", 0)
         // .on("end", transition);
 }
